@@ -7,7 +7,6 @@ AI IT Support Chatbot is an intelligent IT helpdesk system that allows users to 
 - **Frontend**: Vue.js
 - **Backend**: Python (FastAPI)
 - **API Documentation**: Built-in FastAPI Swagger UI (`/docs`) and Redoc (`/redoc`)
-- **Other Technologies**: Please specify (e.g., Redis, WebSocket, Docker, etc.)
 
 ## 📂 Project Structure
 ```
