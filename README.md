@@ -40,7 +40,7 @@ cd backend
 python -m venv venv       # Create virtual environment
 source venv/bin/activate  # Activate virtual environment (Windows: venv\Scripts\activate)
 pip install -r requirements.txt  # Install dependencies
-uvicorn main:app --host 0.0.0.0 --port 8000  # Start FastAPI server
+uvicorn main:app --host 127.0.0.1 --port 8000  # Start FastAPI server
 ```
 
 ### 2️⃣ Frontend Setup & Execution
@@ -84,16 +84,16 @@ async def log_request(request: Request, call_next):
 ### 1. Start the Backend Server
 ```bash
 cd backend
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 ### 2. Test API (Using curl)
 **Test Chatbot**
 ```bash
-curl -X POST http://127.0.0.1:8000/chat -H "Content-Type: application/json" -d '{"user_id": "12345", "message": "My computer won't start."}'
+curl -X POST http://127.0.0.1:8000/chat -H "Content-Type: application/json" -d '{"user_id": "1", "message": "My computer won't start."}'
 ```
 
 **Test Ticket Submission**
 ```bash
-curl -X POST http://127.0.0.1:8000/ticket -H "Content-Type: application/json" -d '{"user_id": "12345", "issue": "Cannot connect to VPN."}'
+curl -X POST http://127.0.0.1:8000/ticket -H "Content-Type: application/json" -d '{"user_id": "1", "issue": "Cannot connect to VPN."}'
 ```
 
