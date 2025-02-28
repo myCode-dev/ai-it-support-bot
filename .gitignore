@@ -1,0 +1,28 @@
+# Ignore Python virtual environment
+backend/venv/
+
+# Ignore environment variable files
+backend/.env
+frontend/.env
+
+# Ignore __pycache__ and compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Ignore Node.js installed dependencies
+frontend/node_modules/
+
+# Ignore Vue.js build files
+frontend/dist/
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Node.js related files
+node_modules/
+npm-debug.log
